@@ -32,8 +32,12 @@ app.get("/compose", (req, res) => {
 });
 
 app.post("/compose", (req, res) => {
-  let blogPostData = req.body.blogContent;
-  console.log(blogPostData);
+  let blogTitle = req.body.title;
+  let blogPost = req.body.post;
+  let post = {
+    title: blogTitle,
+    post: blogPost
+  };
 });
 
 app.listen(3000, function() {
