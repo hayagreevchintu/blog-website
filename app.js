@@ -43,18 +43,20 @@ app.post("/compose", (req, res) => {
   res.redirect('/');
 });
 
-app.get("/posts/:title", (req, res) => {
-  posts.forEach((post) => {
-    if(lodash.lowerCase(post.title) === lodash.lowerCase(req.params.title)){
+app.get("/posts/:postName", function(req, res){
+  const requestedTitle = lodash.lowerCase(req.params.postName);
+
+  posts.forEach(function(post){
+    const storedTitle = lodash.lowerCase(post.title);
+
+    if (storedTitle === requestedTitle) {
       res.render("post", {
         title: post.title,
         body: post.body
       });
     }
-    else {
-      res.send("Match not found");
-    }
   });
+
 });
 
 
