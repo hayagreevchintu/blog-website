@@ -14,9 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^15.0.0",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "mongoose": "^6.1.9"
   },
   "bugs": {
     "url": "https://github.com/hayagreevchintu/blog-website/issues"
