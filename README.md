@@ -13,3 +13,7 @@ Functionalities: This app has a home page with all the blog posts that are store
 
 # Compose Page:
 ![alt text](Screenshots/Compose.png "Compose Page")
+
+This code is open-source. Feel free to use this code as a reference for your projects but please give me credits, coz, let's agree, leaching sucks!
+
+Feel free to leave your comments at hayagreev.varadarajan@outlook.com!
